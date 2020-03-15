@@ -6,12 +6,12 @@ body{
 
 header{
 	background-image: url('../images/hobbies/work3.jpg');
+	background-color: black;
 	background-repeat: no-repeat;
   	background-size: cover;
 	display: grid;
 	grid-template-rows: 400px;
 	grid-template-columns: auto auto auto;
-
 }
 
 nav {
@@ -21,9 +21,6 @@ nav {
 	padding-top: 15px;
 }
 
-.skiptomain a{
-	color: black;
-}
 
 li {
 	display: inline-block;
@@ -45,13 +42,14 @@ li a:hover{
 }
 
 #work{
-	-webkit-text-decoration: white underline;
-	 text-decoration: white underline;
+	-webkit-text-decoration: white double underline;
+	 text-decoration: white double underline;
 }
 
 .skiptomain a{
-	background-color: lightgray;
-	color: black;
+	background-image: url('../images/hobbies/work3.jpg');
+	background-color: black;
+	color: white;
 	text-decoration: none;
  	padding: 10px;
  	-webkit-transition: top 1s ease-out;
@@ -64,7 +62,6 @@ li a:hover{
 .skiptomain a:focus {
    position: absolute;
    top: 0;
-   font-family:;
  }
 
  h1{
@@ -82,35 +79,56 @@ li a:hover{
  }
 
 h2{
-	padding-top: 50px;
+	margin-top: 30px;
 	text-align: center;
-	padding-bottom: 10px;
-}
-
-button{
-	margin-top: 25px;
-	height: 40px;
-	width: 125px;
-	color: red;
-	font-size: 16px;
-	background-color: white;
-	border: 2px solid red;
-}
-
-button:hover{
-	background-color: red;
-	color:white;
+	padding-bottom: 20px;
 }
 
 #contact{
 	display: grid;
-	grid-template-rows: 100px 200px;
+	grid-template-rows: 100px 250px;
 	grid-template-columns: auto;
-	justify-content: center;
+	justify-items: center;
+	align-items: center;
+
 }
 
-form{
+button{
+	height: 40px;
+	width: 125px;
+	color: black;
+	font-size: 16px;
+	background-color: white;
+	border: 2px solid red;
+	border-radius: 15px;
+}
+
+button:hover{
+	background-color: red;
+}
+
+form {
 	margin-top: 30px;
+	padding: 15px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+form p{
+	text-align: center;
+}
+
+input[type=text], input, textarea{
+	width:100%;
+}
+
+input[type=submit]{
+	width: 100%;
+	font-size: 18px;
+}
+
+input[type=submit]:hover{
+	background-color: red;
 }
 
 footer{
@@ -180,12 +198,12 @@ footer{
 
 	#contact{
 		display: grid;
-		grid-template-rows: 200px;
+		grid-template-rows: 250px;
 		grid-template-columns: 50% 50%;
 		justify-items: center;
 		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 60px;
+		margin-top: 30px;
+		margin-bottom: 50px;
 	}
 }
 

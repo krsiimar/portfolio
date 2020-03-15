@@ -1,0 +1,212 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+header{
+	background-image: url('../images/athletics/sports_cover2.jpg');
+	background-color: black;
+	background-repeat: no-repeat;
+  	background-size: cover;
+	display: grid;
+	grid-template-rows: 400px;
+	grid-template-columns: auto auto;
+}
+
+nav {
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 3;
+	justify-self: center;
+	padding-top: 15px;
+}
+
+li {
+	display: inline-block;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+}
+	
+
+li a:focus{
+	border: 2px solid white;
+}
+
+li a:hover{
+	 color: lightblue;
+}
+
+#sports {
+	-webkit-text-decoration: white double underline;
+	text-decoration: white double underline;
+}
+
+.skiptomain a{
+	background-color: black;
+	color: white;
+ 	padding: 10px;
+ 	-webkit-transition: top 1s ease-out;
+ 	transition: top 1s ease-out;
+ 	z-index: 30;
+  	position: absolute;  	
+  	top: -40px;
+}
+
+.skiptomain a:focus {
+   position: absolute;
+   top: 0;
+ }
+
+ h1{
+ 	font-size: 25px;
+ 	color: white;
+ 	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	justify-self: center;
+	padding-top: 230px;
+	padding-left: 20px;
+ }
+
+h2, h3{
+	margin-top: 60px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.achievements, .sking_text, .tennis_text{
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.achievements{
+	padding-top: 20px;
+}
+
+.achievements li{
+	display: block;
+}
+
+.sking_pics, .tennis_pics{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.sking_pics img, .tennis_pics img{
+	padding-top: 10px;
+}
+
+footer{
+	display: grid;
+	grid-template-rows: 40px;
+	grid-template-columns: auto auto auto;
+	margin: 20px;
+}
+
+.social_media{
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	justify-self: center;
+	align-self: center;
+}
+
+.social_media img{
+	transition: all 1s ease;
+	padding: 10px;
+}
+
+.social_media img:hover{
+	-webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  
+  .social_media img{
+    transition: none;
+  }
+}
+
+@media all and (min-width: 750px){
+
+	header {
+		display: grid;
+		grid-template-rows: 600px;
+		grid-template-columns: auto auto;
+	}
+
+	nav {
+		grid-row: 1 / span 1;
+		grid-column: 2/ span 1;
+		justify-self: right;
+		padding-top: 20px;
+		padding-right: 30px;
+	}
+
+	li {
+		padding-right: 15px;
+	}
+
+	li a{
+		padding: 10px;
+	}
+
+	h1{
+		grid-row: 1 / span 1;
+		grid-column: 1/ span 1;
+		justify-self: left;
+		padding-top: 350px;
+		padding-left: 200px;
+		font-size: 30px;
+	}
+
+	.sking_pics, .tennis_pics{
+		align-items: flex-start;
+	}
+
+	#tpic1, #tpic3, #spic1, #spic3{
+		padding-right: 10px;
+	}
+}
+
+@media all and (min-width: 1200px){
+	
+
+	header {
+		display: grid;
+		grid-template-rows: 600px;
+		grid-template-columns: auto auto;
+	}
+
+	nav {
+		grid-row: 1 / span 1;
+		grid-column: 1/ span 1;
+		justify-self: left;
+		padding-top: 20px;
+		padding-right: 30px;
+	}
+
+	li{
+		padding-left: 15px;
+	}
+
+	li a{
+		padding: 15px;
+	}
+
+	h1{
+		font-size: 35px;
+		padding-left: 300px;
+	}
+
+	#tpic2, #tpic4, #spic2, #spic4{
+		padding-right: 10px;
+	}
+}
+

@@ -10,35 +10,40 @@
     	<title>Work</title>
 	</head>
 	<body>
+		<div class="skiptomain"><a href="#main_content">Skip to Main Content</a></div>
 		<header>
-			<div class="skiptomain"><a href="#main_content">Skip to Main Content</a></div>
 			<nav>
 				<ul>
-					<li><a id = 'about' href = 'about.html'>About</a></li>
-					<li><a id = 'work' href = 'work.html'>Work</a></li>
-					<li><a href = 'iii'>Sports</a></li>
-					<li><a href = 'iii'>Life</a></li>
+					<li><a id = 'about' href = 'file:///Users/kristofersiimar/Desktop/SI339/portfolio/about.html'>About</a></li>
+					<li><a id = 'work' href = 'file:///Users/kristofersiimar/Desktop/SI339/portfolio/work.html'>Work</a></li>
+					<li><a href = 'file:///Users/kristofersiimar/Desktop/SI339/portfolio/sports.html'>Sports</a></li>
+					<li><a href = 'file:///Users/kristofersiimar/Desktop/SI339/portfolio/life.html'>Life</a></li>
 				</ul>
 			</nav>
-			<h1 id = "name">Work Experience</h1>
+			<h1>Work Experience</h1>
 		</header>
 		<main id = 'main_content'>
-			<h2>My skills and experience.</h2><br>
+			<h2>My skills and experience.</h2>
 			<div id = 'main_text'>
-			<p>I am currently a junior majoring in Information Analysis and Business Administration at the University of Michigan graduating in summer of 2021.</p><br>
+			<p>I am currently a junior majoring in Information Analysis and minoring in Business Administration at the University of Michigan, graduating in the summer of 2021.</p><br>
 			<p>I am motivated to work through the complex challenges of product production and experiences influencing everyday activities through data analysis.</p><br>
 			<p>Last summer I interned at Intertrust Technologies, a software company specialized in trusted distributed computing, where my team and I developed the first wind farm power production insurance product, using real-time weather data. While significantly improving my data analysis skills using Python, I learned to embrace challenges and complexity to better solve a problem. In addition to my internship experience, through practicing and competing together with eleven other teammates on the University of Michigan's Varsity Tennis Team and having played on the Estonian National Tennis Team, I have learned the importance of teamwork and goal-orientation skills.</p>
-			<h2>Future Aspirations.</h2><br>
-			<p>In the near future, I see myself working at an innovative tech company as a data analyst/scientist. Later on, when I have established a deep understanding of data science, I would like to engage myself more with the business side, where I would solve business problems with analytical/data-focused mindset and leading data science-related projects. I realize that perspectives might change, but better to have a plan.</p>
+			<h2>Future Aspirations.</h2>
+			<p>In the near future, I see myself working at an innovative tech company as a data analyst/scientist. Later on, when I have established a deep understanding of data science, I would like to engage myself more with the business side, where I would solve business problems with analytical/data-focused mindset and leading data science-related projects. I realize that perspectives might change over time, but better to have a plan!</p>
 			</div><br>
 			<div id = 'contact'>
-				<a id = 'resume' href = 'texts/resume.pdf'><button>Resume</button></a>
+				<button onclick = "window.location.href = 'texts/resume.pdf';">Resume</button>
 				<form action="https://formspree.io/xdozqobd" method="POST"> 
-				<p>Get in touch!</p><br>
-				  <label for = 'name'>Name:</lable><input type="text" name="name"><br>
-				  <label for = 'email'>Email:</label><input type="text" name="email"> <br>
-				  <label for = 'message'>Message:</label><textarea type="text" name="message"></textarea><br><br>
-				  <input type="submit" value="Submit">
+					<p>Get in touch!</p><br>
+					<div class = 'form_content'>
+						 <label for = 'name'>Name:</label>
+						 <input type="text" id="name" name="name"><br><br>
+						 <label for = 'email'>Email:</label>
+						 <input type="text" id="email" name="email"><br><br>
+						 <label for = 'message'>Message:</label>
+						 <textarea id="message"></textarea><br><br>
+						 <input type="submit" value="Submit">
+					</div>
 				</form>
 			</div>
 		</main>

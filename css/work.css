@@ -166,6 +166,8 @@ footer{
 @media all and (min-width: 750px){
 
 	header {
+		background-attachment: fixed;
+		background-position: center;
 		display: grid;
 		grid-template-rows: 600px;
 		grid-template-columns: auto auto;
